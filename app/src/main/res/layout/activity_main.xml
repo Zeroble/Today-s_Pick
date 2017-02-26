@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sup3rd3v3l0p3r.teamvetor.today_pick.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="고를 항목을 / 로 분리하여 입력하세요.
+예)푸딩/빵/음료수 (최대 50개)"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:background="#3d000000"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/editText" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="결정하기버튼!"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:background="#3d000000"
+        android:onClick="decideButton"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:text="갯수"
+            android:background="#3d000000"
+            android:textColor="#ff9797"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:id="@+id/numOfIndex"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="결과"
+            android:background="#3d000000"
+            android:textColor="#6896ff"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:id="@+id/result"/>
+    </LinearLayout>
+</LinearLayout>
